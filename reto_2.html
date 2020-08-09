@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>var user =prompt("escoge una opcion entre : piedra, papel o tijera");
+        var bot = Math.floor(Math.random() * 3) + 1
+        var op_bot;
+       console.log(" tu seleccion es " + user)
+       switch(bot){
+           case 1:
+           op_bot="piedra";
+           console.log("la seleccion de la cpu es " +op_bot)
+           break;
+           case 2:
+           op_bot="papel";
+           console.log("la seleccion de la cpu es " + op_bot)
+           break;
+           case 3:
+           op_bot="tijera";
+           console.log("la seleccion de la cpu es " + op_bot)
+           break;
+       }
+
+        switch(true){
+         case ( user === op_bot):
+        console.log("esto es un empate");
+        break;
+        case ( user === "piedra" && op_bot === "papel"):
+        console.log("la cpu gana tiene " + op_bot);
+        break;
+        case ( user === "piedra" && op_bot === "tijera"):
+            console.log( "le ganaste al a cpu , tiene "+ op_bot);
+            break;
+        case ( user === "papel" && op_bot === "piedra"):
+            console.log("le ganaste al a cpu , tiene "+ op_bot);
+            break;
+        case ( user === "papel" && op_bot === "tijera"):
+            console.log("la cpu gana, tiene  "+ op_bot);
+            break
+       case( user === "tijera" && op_bot === "papel"):
+            console.log("le ganas a la cpu, tiene "+ op_bot );
+            break
+       case ( user === "tijera" && op_bot === "piedra"):
+            console.log("la cpu gana tiene "+ op_bot);
+            break
+       default:
+            console.log("no se reconoce la opcion")}
+       
+            </script>
+</body>
+</html>
+

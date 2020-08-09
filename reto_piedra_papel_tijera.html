@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>juego de piedra,papel o tijera</h2>
+
+
+
+<p id="demo"></p>
+
+<p id="p_bot"></p>
+<div id="resultado"></div>
+
+<script>
+
+    var user =prompt("escoge una opcion entre : piedra, papel o tijera");
+    var bot = Math.floor(Math.random() * 3) + 1
+    var op_bot;
+console.log(bot);
+if( bot == 1){
+            op_bot= "piedra";
+            console.log(op_bot);         
+    }
+    else if( bot == 2){
+         op_bot= "papel";
+         console.log(op_bot);      
+    }
+    else  {
+         op_bot= "tijera";
+         console.log(op_bot);   
+    } 
+if( user === op_bot){
+    console.log("esto es un empate");
+}else if ( user === "piedra" && op_bot === "papel"){
+    console.log("la cpu gana tiene " + op_bot);}
+    else if ( user === "piedra" && op_bot === "tijera"){
+        console.log( "le ganaste al a cpu , tiene "+ op_bot);}
+    else if ( user === "papel" && op_bot === "piedra"){
+        console.log("le ganaste al a cpu , tiene "+ op_bot);}
+    else if ( user === "papel" && op_bot === "tijera"){
+        console.log("la cpu gana, tiene  "+ op_bot);}
+    else if ( user === "tijera" && op_bot === "papel"){
+        console.log("le ganas a la cpu, tiene "+ op_bot );}
+    else if ( user === "tijera" && op_bot === "piedra"){
+        console.log("la cpu gana tiene "+ op_bot);}
+    else {
+        console.log("no se reconoce la opcion")}
+    
+
+
+
+</script>
+
+</body>
+</html>
